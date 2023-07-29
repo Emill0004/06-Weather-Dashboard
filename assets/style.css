@@ -1,0 +1,42 @@
+header {
+    background-color: #253f52;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#sidebar {
+    float: left;
+    width: 25%;
+}
+#sidebar input, button {
+    width: 100%;
+    
+}
+
+main {
+    float: right;
+    margin-right: 1%;
+}
+
+.card-box {
+    display: flex;
+}
+
+.forecast-card {
+    background-color: #253f52;
+    color: white;
+    margin-right: 5%;
+}
+
+.history-btn {
+    margin-top: 10px;
+    background-color: lightGray;
+}
+
+#search-btn {
+    background-color: dodgerblue;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
