@@ -74,6 +74,7 @@ function setMain(weather) {
     mainName.textContent = weather.city.name;
     const date = weather.list[0].dt_txt.toString();
     mainDate.textContent = date.slice(0, 10);
+    mainEmoji.setAttribute("src", `https://openweathermap.org/img/wn/${weather.list[0].weather[0].icon}@2x.png`);
     mainTemp.textContent = `Temp: ${weather.list[0].main.temp}°F`;
     mainWind.textContent = `Wind: ${weather.list[0].wind.speed} MPH`
     mainHumidity.textContent = `Humidity: ${weather.list[0].main.humidity} %`
@@ -82,7 +83,7 @@ function setMain(weather) {
 function setOne(weather) {
     const date = weather.list[0].dt_txt.toString();
     day1Date.textContent = date.slice(0, 10);
-    day1Emoji.textContent = ``;
+    day1Emoji.setAttribute("src", `https://openweathermap.org/img/wn/${weather.list[0].weather[0].icon}@2x.png`);
     day1Temp.textContent = `Temp: ${weather.list[0].main.temp} °F`;
     day1Wind.textContent = `Wind: ${weather.list[0].wind.speed} MPH`;
     day1Humidity.textContent = `Humidity: ${weather.list[0].main.humidity} %`;
@@ -91,7 +92,7 @@ function setOne(weather) {
 function setTwo(weather) {
     const date = weather.list[7].dt_txt.toString();
     day2Date.textContent = date.slice(0, 10);
-    day2Emoji.textContent = ``;
+    day2Emoji.setAttribute("src", `https://openweathermap.org/img/wn/${weather.list[7].weather[0].icon}@2x.png`);
     day2Temp.textContent = `Temp: ${weather.list[7].main.temp} °F`;
     day2Wind.textContent = `Wind: ${weather.list[7].wind.speed} MPH`;
     day2Humidity.textContent = `Humidity: ${weather.list[7].main.humidity} %`;
@@ -100,7 +101,7 @@ function setTwo(weather) {
 function setThree(weather) {
     const date = weather.list[15].dt_txt.toString();
     day3Date.textContent = date.slice(0, 10);
-    day3Emoji.textContent = ``;
+    day3Emoji.setAttribute("src", `https://openweathermap.org/img/wn/${weather.list[15].weather[0].icon}@2x.png`);
     day3Temp.textContent = `Temp: ${weather.list[15].main.temp} °F`;
     day3Wind.textContent = `Wind: ${weather.list[15].wind.speed} MPH`;
     day3Humidity.textContent = `Humidity: ${weather.list[15].main.humidity} %`;
@@ -109,7 +110,7 @@ function setThree(weather) {
 function setFour(weather) {
     const date = weather.list[23].dt_txt.toString();
     day4Date.textContent = date.slice(0, 10);
-    day4Emoji.textContent = ``;
+    day4Emoji.setAttribute("src", `https://openweathermap.org/img/wn/${weather.list[23].weather[0].icon}@2x.png`);
     day4Temp.textContent = `Temp: ${weather.list[23].main.temp} °F`;
     day4Wind.textContent = `Wind: ${weather.list[23].wind.speed} MPH`;
     day4Humidity.textContent = `Humidity: ${weather.list[23].main.humidity} %`;
@@ -118,7 +119,7 @@ function setFour(weather) {
 function setFive(weather) {
     const date = weather.list[31].dt_txt.toString();
     day5Date.textContent = date.slice(0, 10);
-    day5Emoji.textContent = ``;
+    day5Emoji.setAttribute("src", `https://openweathermap.org/img/wn/${weather.list[31].weather[0].icon}@2x.png`);
     day5Temp.textContent = `Temp: ${weather.list[31].main.temp} °F`;
     day5Wind.textContent = `Wind: ${weather.list[31].wind.speed} MPH`;
     day5Humidity.textContent = `Humidity: ${weather.list[31].main.humidity} %`;
