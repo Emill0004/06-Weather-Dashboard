@@ -8,10 +8,11 @@
     </head>
 
     <body>
+        <!-- banner at the top of the page -->
         <header>
             <h1>Weather Dashboard</h1>
         </header>
-
+        <!-- div contianing the search bar, search button, and the history buttons -->
         <div id="sidebar" style="margin-right: 1%; margin-left: 1%;">
             <h2>Search for a City:</h2>
             <input id="searchBar" placeholder="City Name">
@@ -21,12 +22,12 @@
         </div>
 
         <main>
-
+            <!-- main card -->
             <div class="card mb-3" style="width: 1000px; margin-top: 1%;">
                 <div class="row g-0">
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h4 class="card-title" id="cardCity"><span id="mainName">City</span> (<span id="mainDate">Date</span>) <img id="mainEmoji"></img></h4>
+                      <h4 class="card-title" id="cardCity"><span id="mainName">City</span> <img id="mainEmoji"></img></h4>
                       <p id="mainTemp" class="card-text">Temp:</p>
                       <p id="mainWind" class="card-text">Wind:</p>
                       <p id="mainHumidity" class="card-text">Humidity:</p>
@@ -37,6 +38,7 @@
             
             <h5><strong>5-Day Forecast:</strong></h5>
 
+            <!-- 5-day Forecast cards -->
             <div class="card-box">
                 <div class="card forecast-card">
                     <div class="card-body">
